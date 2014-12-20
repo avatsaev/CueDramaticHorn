@@ -14,6 +14,10 @@
 		A3FB646B1A45860700D7017F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3FB646A1A45860700D7017F /* Images.xcassets */; };
 		A3FB646E1A45860700D7017F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A3FB646C1A45860700D7017F /* LaunchScreen.xib */; };
 		A3FB647A1A45860700D7017F /* CueDramaticHornTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB64791A45860700D7017F /* CueDramaticHornTests.m */; };
+		A3FB64871A45879500D7017F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A3FB64861A45879500D7017F /* AudioToolbox.framework */; };
+		A3FB648B1A4589ED00D7017F /* inception.aiff in Resources */ = {isa = PBXBuildFile; fileRef = A3FB648A1A4589ED00D7017F /* inception.aiff */; };
+		A3FB648D1A4592F200D7017F /* dramatic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3FB648C1A4592F200D7017F /* dramatic.mp3 */; };
+		A3FB648F1A45945C00D7017F /* dramatic2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A3FB648E1A45945C00D7017F /* dramatic2.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		A3FB64731A45860700D7017F /* CueDramaticHornTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CueDramaticHornTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB64781A45860700D7017F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3FB64791A45860700D7017F /* CueDramaticHornTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CueDramaticHornTests.m; sourceTree = "<group>"; };
+		A3FB64861A45879500D7017F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		A3FB648A1A4589ED00D7017F /* inception.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = inception.aiff; sourceTree = "<group>"; };
+		A3FB648C1A4592F200D7017F /* dramatic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dramatic.mp3; sourceTree = "<group>"; };
+		A3FB648E1A45945C00D7017F /* dramatic2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dramatic2.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FB64871A45879500D7017F /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 		A3FB64511A45860700D7017F = {
 			isa = PBXGroup;
 			children = (
+				A3FB64861A45879500D7017F /* AudioToolbox.framework */,
 				A3FB645C1A45860700D7017F /* CueDramaticHorn */,
 				A3FB64761A45860700D7017F /* CueDramaticHornTests */,
 				A3FB645B1A45860700D7017F /* Products */,
@@ -96,6 +106,7 @@
 		A3FB645D1A45860700D7017F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A3FB64831A45871000D7017F /* audio */,
 				A3FB645E1A45860700D7017F /* Info.plist */,
 				A3FB645F1A45860700D7017F /* main.m */,
 			);
@@ -117,6 +128,16 @@
 				A3FB64781A45860700D7017F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A3FB64831A45871000D7017F /* audio */ = {
+			isa = PBXGroup;
+			children = (
+				A3FB648E1A45945C00D7017F /* dramatic2.mp3 */,
+				A3FB648A1A4589ED00D7017F /* inception.aiff */,
+				A3FB648C1A4592F200D7017F /* dramatic.mp3 */,
+			);
+			name = audio;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +220,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3FB648D1A4592F200D7017F /* dramatic.mp3 in Resources */,
+				A3FB648B1A4589ED00D7017F /* inception.aiff in Resources */,
+				A3FB648F1A45945C00D7017F /* dramatic2.mp3 in Resources */,
 				A3FB64691A45860700D7017F /* Main.storyboard in Resources */,
 				A3FB646E1A45860700D7017F /* LaunchScreen.xib in Resources */,
 				A3FB646B1A45860700D7017F /* Images.xcassets in Resources */,

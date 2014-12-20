@@ -7,8 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AudioToolbox/AudioToolbox.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController{
+    SystemSoundID inception;
+    SystemSoundID dramatic;
+    SystemSoundID currentSound;
+}
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *soundSelector;
+@property (strong, nonatomic) NSString* inceptionPath;
+@property (strong, nonatomic) NSString* dramaticPath;
+@property (strong, nonatomic) NSString* dramatic2Path;
 
 
 @end

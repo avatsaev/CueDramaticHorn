@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
@@ -15,11 +16,70 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ro1-xK-2gQ">
+                                <rect key="frame" x="167" y="161" width="267" height="278"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="267" id="fUW-k0-NhI"/>
+                                    <constraint firstAttribute="height" constant="278" id="lct-oS-P0h"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="cue1">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="play_it_faggot:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BK2-qQ-3Jb"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gkv-gf-Wdj">
+                                <rect key="frame" x="-61" y="-14" width="123" height="29"/>
+                                <segments>
+                                    <segment title="Inception"/>
+                                    <segment title="Dramatic"/>
+                                    <segment title="More dramatic"/>
+                                </segments>
+                                <connections>
+                                    <action selector="soundChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="1qF-Sr-JyL"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gkv-gf-Wdj" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="8" id="3ga-R7-zYg"/>
+                            <constraint firstItem="gkv-gf-Wdj" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="8GI-1a-2zg"/>
+                            <constraint firstAttribute="centerX" secondItem="ro1-xK-2gQ" secondAttribute="centerX" id="Xlc-be-FQu"/>
+                            <constraint firstItem="gkv-gf-Wdj" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="k7W-Qt-yGu"/>
+                            <constraint firstAttribute="centerY" secondItem="ro1-xK-2gQ" secondAttribute="centerY" id="l4L-Z1-h0S"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="gkv-gf-Wdj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="3ga-R7-zYg"/>
+                                <exclude reference="8GI-1a-2zg"/>
+                                <exclude reference="k7W-Qt-yGu"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="gkv-gf-Wdj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="3ga-R7-zYg"/>
+                                <include reference="8GI-1a-2zg"/>
+                                <include reference="k7W-Qt-yGu"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="soundSelector" destination="gkv-gf-Wdj" id="S89-dW-dlv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="cue1" width="440" height="440"/>
+    </resources>
 </document>
