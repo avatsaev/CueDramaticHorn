@@ -26,6 +26,9 @@
     self.dramatic2Path = [[NSBundle mainBundle]
                          pathForResource:@"dramatic2" ofType:@"mp3"];
     
+    self.badumtssPath = [[NSBundle mainBundle]
+                          pathForResource:@"badumtss" ofType:@"mp3"];
+    
     AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:self.inceptionPath], &currentSound);
 }
 - (IBAction)play_it_faggot:(id)sender {
@@ -51,6 +54,23 @@
             break; 
     }
 }
+
+- (IBAction)changeJoke:(id)sender {
+    
+    
+    switch (self.jokeSelector.selectedSegmentIndex){
+            
+        case 0:
+            AudioServicesCreateSystemSoundID((__bridge CFURLRef)[NSURL fileURLWithPath:self.badumtssPath], &currentSound);
+            break;
+        default:
+            break;
+    }
+    
+    
+}
+
+
 
 
 - (void)didReceiveMemoryWarning {

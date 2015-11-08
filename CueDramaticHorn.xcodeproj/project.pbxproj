@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A356A13E1A45FE2300C262CE /* badumtss.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A356A13D1A45FE2300C262CE /* badumtss.mp3 */; };
 		A3FB64601A45860700D7017F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB645F1A45860700D7017F /* main.m */; };
 		A3FB64631A45860700D7017F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB64621A45860700D7017F /* AppDelegate.m */; };
 		A3FB64661A45860700D7017F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A3FB64651A45860700D7017F /* ViewController.m */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A356A13D1A45FE2300C262CE /* badumtss.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = badumtss.mp3; sourceTree = "<group>"; };
 		A3FB645A1A45860700D7017F /* CueDramaticHorn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CueDramaticHorn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3FB645E1A45860700D7017F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A3FB645F1A45860700D7017F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			children = (
 				A3FB648E1A45945C00D7017F /* dramatic2.mp3 */,
 				A3FB648A1A4589ED00D7017F /* inception.aiff */,
+				A356A13D1A45FE2300C262CE /* badumtss.mp3 */,
 				A3FB648C1A4592F200D7017F /* dramatic.mp3 */,
 			);
 			name = audio;
@@ -226,6 +229,7 @@
 				A3FB64691A45860700D7017F /* Main.storyboard in Resources */,
 				A3FB646E1A45860700D7017F /* LaunchScreen.xib in Resources */,
 				A3FB646B1A45860700D7017F /* Images.xcassets in Resources */,
+				A356A13E1A45FE2300C262CE /* badumtss.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +440,7 @@
 				A3FB647F1A45860700D7017F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A3FB64801A45860700D7017F /* Build configuration list for PBXNativeTarget "CueDramaticHornTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +449,7 @@
 				A3FB64821A45860700D7017F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
